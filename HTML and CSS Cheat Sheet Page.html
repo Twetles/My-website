@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Cheat Sheet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(90deg, #6a11cb, #555);
+            color: #fff;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.75rem 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #6a11cb;
+            border-radius: 5px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .section {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            padding: 1.5rem;
+            width: 100%;
+            max-width: 500px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            color: #6a11cb;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #dce0e6;
+            padding-bottom: 0.5rem;
+        }
+        .section ul {
+            list-style-type: disc;
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .code-box {
+            background-color: #272822;
+            color: #f8f8f2;
+            font-family: 'Courier New', monospace;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #333;
+            color: #f4f4f4;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Software Developement Cheat Sheet</h1>
+        <p>HTML & CSS Essentials</p>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home Page</a>
+        <a href="HobbiesAndInterests.html">Hobbies/Interests</a>
+        <a href="Resume.html">Resumé</a>
+    </nav>
+
+    <main>
+        <section class="section" id="html-cheatsheet">
+            <h2>HTML Cheat Sheet</h2>
+            <p>
+                The HTML Cheat Sheet page helps you keep track of commonly used elements, tags, and attributes in HTML. Below are some key components you can use in your projects:
+            </p>
+            <ul>
+                <li>&lt;html&gt; - Root element of an HTML page</li>
+                <li>&lt;head&gt; - Contains metadata and links</li>
+                <li>&lt;title&gt; - Sets the page title</li>
+                <li>&lt;body&gt; - Contains visible page content</li>
+                <li>&lt;h1&gt; to &lt;h6&gt; - Heading tags</li>
+                <li>&lt;p&gt; - Paragraphs</li>
+                <li>&lt;a&gt; - Hyperlinks</li>
+                <li>&lt;img&gt; - Images</li>
+                <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; - Lists</li>
+                <li>&lt;div&gt; and &lt;span&gt; - Layout containers</li>
+                <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt; - Tables</li>
+                <li>&lt;form&gt;, &lt;input&gt;, &lt;button&gt; - Forms</li>
+                <li>Attributes: <b>id</b>, <b>class</b>, <b>src</b>, <b>href</b>, etc.</li>
+                <li>&lt;meta&gt; - Defines metadata</li>
+                <li>&lt;footer&gt; and &lt;header&gt; - Semantic sections</li>
+            </ul>
+            <div class="code-box">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Cheat Sheet&lt;/title&gt;<br>
+                &nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;HTML Elements&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+        </section>
+
+        <section class="section" id="css-cheatsheet">
+            <h2>CSS Cheat Sheet</h2>
+            <p>
+                The CSS Cheat Sheet page allows you to document key properties, selectors, and styling rules. Below are some key CSS functionalities to remember:
+            </p>
+            <ul>
+                <li>Selectors: <b>class</b>, <b>id</b>, <b>element</b></li>
+                <li>Properties: <b>color</b>, <b>font-size</b>, <b>margin</b>, <b>padding</b></li>
+                <li>Box Model: <b>width</b>, <b>height</b>, <b>border</b></li>
+                <li>Display: <b>block</b>, <b>inline</b>, <b>flex</b></li>
+                <li>Flexbox properties: <b>justify-content</b>, <b>align-items</b></li>
+                <li>Background properties: <b>background-color</b>, <b>background-image</b></li>
+                <li>Text properties: <b>text-align</b>, <b>line-height</b></li>
+                <li>Positioning: <b>absolute</b>, <b>relative</b>, <b>fixed</b></li>
+                <li>Pseudo-selectors: <b>:hover</b>, <b>:nth-child()</b></li>
+                <li>Media Queries for responsiveness</li>
+                <li>Gradients: linear, radial</li>
+                <li>Shadows: box-shadow, text-shadow</li>
+                <li>Transitions and Animations</li>
+                <li>Units: px, em, rem, %, vw</li>
+                <li>Colors: HEX, RGB, HSL</li>
+            </ul>
+            <div class="code-box">
+                body {<br>
+                &nbsp;&nbsp;background-color: #f4f4f4;<br>
+                &nbsp;&nbsp;color: #333;<br>
+                &nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+                }<br>
+                h1 {<br>
+                &nbsp;&nbsp;color: #6a11cb;<br>
+                }
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tyler Le. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

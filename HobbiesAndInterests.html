@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies & Interests</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #555, #2575fc);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            display: block;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        header .header-content {
+            text-align: center;
+            flex: 1;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .hobbies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .hobby-card {
+            background: white;
+            width: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .hobby-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .hobby-card h3 {
+            color: #555;
+            margin: 15px 0;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .hobby-card p {
+            display: none;
+            padding: 0 15px 15px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home Page</a></li>
+                <li><a href="HTML and CSS Cheat Sheet Page.html">HTML and CSS CheatSheet</a></li>
+                <li><a href="Resume.html">Resumé</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>My Hobbies & Interests</h1>
+            <p>Discover what kind of Music, Anime, Video Games, Physical Activities, and many other pieces of media I enjoy in my free time!</p>
+        </div>
+    </header>
+
+    <section class="hobbies-container">
+        <div class="hobby-card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/636/384/small_2x/valorant-logo-valorant-icon-transparent-free-png.png">
+            <h3>Valorant</h3>
+            <p>Valorant is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world. In the main game mode with the 4 agent types (Duelist, Sentinel, Initiator, and Controller)  players are assigned to either the attacking or defending team with each team having five players on it.</p>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://1000logos.net/wp-content/uploads/2021/08/Genshin-Impact-Logo.png">
+            <h3>Genshin Impact</h3>
+            <p>The player takes on the role of the Traveler, an interstellar adventurer who is separated from their twin sibling after landing in Teyvat. The Traveler must journey across the seven nations of Teyvat to find their lost sibling, accompanied by their guide, Paimon. Along the way, the Traveler will befriend many people, become involved in the nations' affairs, and unravel the mysteries of the land.</p>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Honkai_Star_Rail_%28logo%29.png">
+            <h3>Honkai Star Rail</h3>
+            <p>Players embark on an interstellar journey aboard the Astral Express, a train that travels across the universe. You play as the Trailblazer, a character implanted with a powerful and mysterious entity called a Stellaron. Stellaron, also known as "the Cancer of All Worlds," causes chaos and destruction in the worlds it affects. Your mission is to uncover the mysteries of the Stellaron, explore diverse planets, and resolve the crises plaguing each world.</p>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://calgaryartsdevelopment.com/wp-content/uploads/2017/09/YMCA-Calgary.png">
+            <h3>Gym</h3>
+            <p>Staying fit and achieving new strength goals. Currently I am trying to lose weight, to achieve this goal I plan to commit my time in the gym lifting weights, and doing a nice calorie burning exercise like the treadmill, stairmaster, and a bicycle simulator. Part of the goal consists of eating healthy/creating a balanced diet, and getting plenty of rest.</p>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://www.logo.wine/a/logo/Spotify/Spotify-Icon-Logo.wine.svg">
+            <h3>Music</h3>
+            <p>Listening to calming and energizing playlists. My personal favourite genres of music usually consists of Japanese Pop (Jpop), Rhythm and Blues (RNB), Korean Pop (Kpop), and many other relaxing or chill types of music. My favourite artists consists of Milet, Yorushika, Kenshi Yonezu, Ado, Sayuri, Le Sserafim, Itzy, New Jeans, Bruno Mars, and a lot more</p>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/029/167/295/non_2x/naruto-anime-logo-free-vector.jpg">
+            <h3>Anime</h3>
+            <p>Anime is Japanese animation that has become one of the largest entertainment industries. With new Animes airing every season in a 12 or more episode session, has become a watch activty I enjoy and thoroughly spend my free time doing. My top 3 favourite animes are Eighty-Six, Bleach, and Sousou no Frieren because of their compelling and amazing story telling.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tyler Le | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.hobby-card h3').forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+                if (content.style.display === 'none' || content.style.display === '') {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
